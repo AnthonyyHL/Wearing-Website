@@ -1,0 +1,307 @@
+/* --------------------- SPECIFIC DATA --------------------- */
+:root {
+    --light-gray-color: rgb(202,202,200);
+    --very-light-gray-color: rgb(179,179,179);
+}
+
+.sections {
+    margin-bottom: 120px;
+}
+
+.sections .shop {
+    display: block;
+    position: relative;
+    top: 76px;
+    height: fit-content;
+    margin: 0 24px;
+}
+
+.products-carousel-shop {
+    display: none;
+    width: 100%;
+    height: 200px;
+    /*overflow: hidden;*/
+}
+
+.products-carousel {
+    position: relative;
+    left: 26%;
+    width: 1426px;
+}
+
+.products-carousel img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shop-header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--light-gray-color);
+}
+
+.shop-category {
+    position: relative;
+    display: flex;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-header span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 84px;
+    color: black;
+}
+
+/*---------- FILTER SECTION ---------*/
+#filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid var(--light-gray-color);
+}
+
+#filter .title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    /*font-weight: 900;*/
+    color: var(--very-light-gray-color);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+#filter .title:hover {
+    color: black;
+}
+
+#filter .genre-man.active,
+#filter .genre-woman.active {
+    color: black;
+}
+
+#filter .kinda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+}
+
+#filter .filter-container {
+    position: absolute;
+    height: 0;
+    width: 320px;
+    top: 202px;
+    right: 0;
+    overflow: hidden;
+    z-index: 99;
+    background-color: white;
+    transition: .5s ease-in-out;
+}
+
+.filter-options-list {
+    margin: 40px;
+}
+
+#filter .filter-options-container {
+    width: 170px;
+}
+
+#filter .filter-options-container .filter-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-option {
+    margin-bottom: 35px;
+}
+
+.product-container li {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.check-option {
+    background-color: white;
+    height: 8px;
+    width: 8px;
+    border: 1px solid var(--very-light-gray-color);
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+
+.product-quantity {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+}
+
+.product-container span {
+    font-size: 12px;
+}
+
+.quantity {
+    font-size: 12px;
+}
+
+.product-color-container ul {
+    display: grid;
+    margin-top: 10px;
+    gap: 10px 24.5px;
+    grid-template-columns: repeat(auto-fit, minmax(13px, 13px));
+}
+.product-color-container ul li {
+    height: 15px;
+    width: 15px;
+    margin: 0;
+}
+
+.beige, .black, .blue, .brown, .green, .grey, .orange, .pink, .purple, .red, .white, .yellow {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+.beige:hover, .black:hover, .blue:hover, .brown:hover, .green:hover, .grey:hover, .orange:hover, .pink:hover, .purple:hover, .red:hover, .white:hover, .yellow:hover {
+    border: 1px solid black;
+}
+.beige { background-color: rgb(225,206,172) }
+.black { background-color: rgb(0,0,0) }
+.blue { background-color: rgb(117,147,175) }
+.brown { background-color: rgb(130,97,51) }
+.green { background-color: rgb(60,80,68) }
+.grey { background-color: rgb(123,123,109) }
+.orange { background-color: rgb(232,141,63) }
+.pink { background-color: rgb(215,168,158) }
+.purple { background-color: rgb(168,128,184) }
+.red { background-color: rgb(189,35,37) }
+.white { background-color: rgb(246,245,239) }
+.yellow { background-color: rgb(235,185,64) }
+
+.product-price-list .marca {
+    display: flex;
+}
+
+#filter .sort-by-container {
+    position: absolute;
+    height: 0;
+    width: 320px;
+    top: 202px;
+    right: 0;
+    overflow: hidden;
+    z-index: 99;
+    background-color: white;
+    transition: .3s ease-in-out;
+}
+
+.sort-by-options-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.sort-by-options-list li span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+
+
+
+.bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.products-container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    /*gap: 1.5rem;*/
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 260px));
+}
+
+.product {
+    position: relative;
+    display: flex;
+    /*height: 329px;*/
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    /*border: 0.5px solid rgb(175,175,175);*/
+    background-color: white;
+    transition: .3s;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.product .favourite-cart-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    width: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+
+.product .favourite-cart-container .add-favourites {
+    cursor: pointer;
+}
+.product .favourite-cart-container .add-cart-btn {
+    cursor: pointer;
+}
+
+.product span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    color: rgb(99,99,99);
+}
+
+.product .product-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    /*color: rgb(99,99,99);*/
+    color: rgb(99,99,99);
+    cursor: pointer;
+}
+.product-img-shop {
+    position: relative;
+    width: 100%;
+    height: auto;
+    /*border: 1px solid black;*/
+    cursor: pointer;
+}
+
+.product:hover {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.product:hover .favourite-cart-container {
+    opacity: 1;
+}
+
+.product:hover span {
+    color: black;
+}

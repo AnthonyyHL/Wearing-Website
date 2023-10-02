@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ghost Store | Tienda Online de Ropa y Accesorios de Moda</title>
+        <link rel="shortcut icon" href="img/GSLogo.webp" type="image/x-icon">
+
+        <!-------------------- CUSTOM CSS LINK -------------------->
+        <link rel="stylesheet" type="text/css" href="css/product.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <!-------------------- REMIXICON LINK -------------------->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!-------------------- FONT LINK -------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@600&display=swap" rel="stylesheet">
+        <!--<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@900&display=swap" rel="stylesheet">-->
+
+
+
+
+    </head>
+    <body data-barba="wrapper">
+
+        <div class="load-container">
+            <div class="loading-screen"></div>
+        </div>
+
+        <!-------------------- CART -------------------->
+        <div class="cart-container">
+            <div class="inner-cart-container">
+                <ul class="cart-sections">
+                    <li class="cart-title">
+                        <span class="cart-title-text">CARRITO</span>
+                        <div id="x">
+                            <div class="x x1"></div>
+                            <div class="x x2"></div>
+                        </div>
+                    </li>
+                    <li class="cart-subtotal-price">
+                        <span class="cart-subtotal-price-title">SUBTOTAL</span>
+                        <div class="cart-subtotal-price-value">
+                            <span class="cart-subtotal-price-number">$0.00</span>
+                        </div>
+                    </li>
+                    <li class="cart-products">
+                        <div class="cart-products-container">
+                        </div>
+                    </li>
+                    <li class="cart-checkout-btn-container">
+                        <a class="cart-checkout-btn">CHECKOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cart-overlay"></div>
+
+        <header class="header">
+            <!-------------------- LOGO -------------------->
+            <a class="logo" href="MainPage.html"><img src="img/GSLogo.webp"></a>
+
+            <!-------------------- OPTIONS -------------------->
+            <ul class="navlist">
+                <li>
+                    <a class="M-category-link" style="--i:1;">Hombre</a>
+                    <div class="CONTAINER-MAN">
+                        <div class="MEN">
+                            <ul class="CATEGORIES">
+                                <li class="C FOOTWEAR">
+                                    <ul>
+                                        <li>FOOTWEAR</li>
+                                        <li><a>Sneakers</a></li>
+                                        <li><a>Slides</a></li>
+                                        <li><a>Shop All</a></li>
+                                    </ul>
+                                </li>
+                                <li class="C CLOTHING">
+                                    <ul>
+                                        <li>CLOTHING</li>
+                                        <li><a>Tees & Tops</a></li>
+                                        <li><a>Bottom</a></li>
+                                        <li><a>Hoodies</a></li>
+                                        <li><a>Pants</a></li>
+                                        <li><a>Shop All</a></li>
+                                    </ul>
+                                </li>
+                                <li class="C BRANDS">
+                                    <ul>
+                                        <li>BRANDS</li>
+                                        <li><a>Nike</a></li>
+                                        <li><a>Adidas</a></li>
+                                        <li><a>New Balance</a></li>
+                                        <li><a>Converse</a></li>
+                                        <li><a>Shop All</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="W-category-link" style="--i:2;">Mujer</a>
+                    <div class="CONTAINER-WOMAN">
+                        <div class="WOMEN">
+                            <ul class="CATEGORIES">
+                                <li class="C FOOTWEAR">
+                                    <ul>
+                                        <li>FOOTWEAR</li>
+                                        <li><a>Sneakers</a></li>
+                                        <li><a>Slides</a></li>
+                                        <li><a>Shop All</a></li>
+                                    </ul>
+                                </li>
+                                <li class="C CLOTHING">
+                                    <ul>
+                                        <li>CLOTHING</li>
+                                        <li><a>Tees & Tops</a></li>
+                                        <li><a>Bottom</a></li>
+                                        <li><a>Hoodies</a></li>
+                                        <li><a>Pants</a></li>
+                                        <li><a>Shop All</a></li>
+                                    </ul>
+                                </li>
+                                <li class="C BRANDS">
+                                    <ul>
+                                        <li>BRANDS</li>
+                                        <li><a>Nike</a></li>
+                                        <li><a>Adidas</a></li>
+                                        <li><a>New Balance</a></li>
+                                        <li><a>Converse</a></li>
+                                        <li><a>Shop All</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="Accesorios.html" class="Accesorios-category-link" style="--i:3;">Accesorios</a>
+                </li>
+
+                <li>
+                    <a href="Maquillaje.html" class="Maquillaje-category-link" style="--i:4;">Maquillaje</a>
+                </li>
+            </ul>
+
+            <!-------------------- EXTRA OPTIONS -------------------->
+            <div class="extras">
+                <a style="--i:1;"><i class="ri-search-line"></i></a>
+                <a href="Perfil.html" style="--i:2;"><i class="ri-user-line"></i></a>
+                <a style="--i:3;"><i class="shop-bag ri-shopping-bag-line"></i></a>
+                <div class="search">
+                    <input type="text" placeholder="Buscar">
+                </div>
+                <!-------------------- HAMBURGER BUTTON -------------------->
+                <a href="#" class="hamburger_icon" id="menu-icon" style="--i:4;">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </a>
+            </div>
+
+            <!-------------------- DASHBOARD -------------------->
+            <div id="dashboard" class="dashboard_container">
+                <div class="dashboard">
+                    <ul class="container dashboard-options_list">
+                        <li class="option dashboard-options_list_man">
+                            <span class="hombre">HOMBRE</span>
+                            <ul class="container categories_man categories">
+                                <li>
+                                    <div class="arrow a_man">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m17.1 18.9 5.9-6.4L17.1 6m5.9 6.4H0" stroke="currentColor" stroke-width="1.1"></path>
+                                        </svg>
+                                    </div>
+                                </li>
+                                <li class="title">HOMBRE</li>
+                                <li class="option category_footwear f_man">
+                                    <span class="footwear_m">FOOTWEAR</span>
+                                    <div class="container c_category_footwear_options_man c_category_footwear_options">
+                                        <ul class="category_options">
+                                            <li>
+                                                <div class="arrow a_man_footwear">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="m17.1 18.9 5.9-6.4L17.1 6m5.9 6.4H0" stroke="currentColor" stroke-width="1.1"></path>
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li class="title">FOOTWEAR</li>
+                                            <li><a>SNEAKERS</a></li>
+                                            <li><a>SLIDES</a></li>
+                                            <li><a>EXPLORE</a></li>
+                                        </ul>
+                                    </div>
+                                    <i class="ri-arrow-right-s-line"></i>
+                                </li>
+
+                                <li class="option category_clothing c_man">
+                                    <span class="clothing_m">CLOTHING</span>
+                                    <div class="container c_category_clothing_options_man c_category_clothing_options">
+                                        <ul class="category_options">
+                                            <li>
+                                                <div class="arrow a_man_clothing">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="m17.1 18.9 5.9-6.4L17.1 6m5.9 6.4H0" stroke="currentColor" stroke-width="1.1"></path>
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li class="title">CLOTHING</li>
+                                            <li><a>TOP</a></li>
+                                            <li><a>BOTTOM</a></li>
+                                            <li><a>HOODIES</a></li>
+                                            <li><a>PANTS</a></li>
+                                            <li><a>EXPLORE</a></li>
+                                        </ul>
+                                    </div>
+                                    <i class="ri-arrow-right-s-line"></i>
+                                </li>
+
+                                <li class="option category_brands b_man">
+                                    <span class="brands_m">BRANDS</span>
+                                    <div class="container c_category_brands_options_man c_category_brands_options">
+                                        <ul class="category_options">
+                                            <li>
+                                                <div class="arrow a_man_brands">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="m17.1 18.9 5.9-6.4L17.1 6m5.9 6.4H0" stroke="currentColor" stroke-width="1.1"></path>
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li class="title">BRANDS</li>
+                                            <li><a>NIKE</a></li>
+                                            <li><a>ADIDAS</a></li>
+                                            <li><a>NEW BALANCE</a></li>
+                                            <li><a>CONVERSE</a></li>
+                                            <li><a>EXPLORE</a></li>
+                                        </ul>
+                                    </div>
+                                    <i class="ri-arrow-right-s-line"></i>
+                                </li>
+                            </ul>
+                            <i class="ri-arrow-right-s-line"></i>
+                        </li>
+
+                        <li class="option dashboard-options_list_woman">
+                            <span class="mujer">MUJER</span>
+                            <ul class="container categories_woman categories">
+                                <li>
+                                    <div class="arrow a_woman">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m17.1 18.9 5.9-6.4L17.1 6m5.9 6.4H0" stroke="currentColor" stroke-width="1.1"></path>
+                                        </svg>
+                                    </div>
+                                </li>
+                                <li class="title">MUJER</li>
+                                <li class="option category_footwear f_woman">
+                                    <span class="footwear_w">FOOTWEAR</span>
+                                    <div class="container c_category_footwear_options_woman c_category_footwear_options">
+                                        <ul class="category_options">
+                                            <li>
+                                                <div class="arrow a_woman_footwear">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="m17.1 18.9 5.9-6.4L17.1 6m5.9 6.4H0" stroke="currentColor" stroke-width="1.1"></path>
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li class="title">FOOTWEAR</li>
+                                            <li><a>SNEAKERS</a></li>
+                                            <li><a>SLIDES</a></li>
+                                            <li><a>EXPLORE</a></li>
+                                        </ul>
+                                    </div>
+                                    <i class="ri-arrow-right-s-line"></i>
+                                </li>
+
+                                <li class="option category_clothing c_woman">
+                                    <span class="clothing_w">CLOTHING</span>
+                                    <div class="container c_category_clothing_options_woman c_category_clothing_options">
+                                        <ul class="category_options">
+                                            <li>
+                                                <div class="arrow a_woman_clothing">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="m17.1 18.9 5.9-6.4L17.1 6m5.9 6.4H0" stroke="currentColor" stroke-width="1.1"></path>
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li class="title">CLOTHING</li>
+                                            <li><a>TOP</a></li>
+                                            <li><a>BOTTOM</a></li>
+                                            <li><a>HOODIES</a></li>
+                                            <li><a>PANTS</a></li>
+                                            <li><a>EXPLORE</a></li>
+                                        </ul>
+                                    </div>
+                                    <i class="ri-arrow-right-s-line"></i>
+                                </li>
+
+                                <li class="option category_brands b_woman">
+                                    <span class="brands_w">BRANDS</span>
+                                    <div class="container c_category_brands_options_woman c_category_brands_options">
+                                        <ul class="category_options">
+                                            <li>
+                                                <div class="arrow a_woman_brands">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="m17.1 18.9 5.9-6.4L17.1 6m5.9 6.4H0" stroke="currentColor" stroke-width="1.1"></path>
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li class="title">BRANDS</li>
+                                            <li><a>NIKE</a></li>
+                                            <li><a>ADIDAS</a></li>
+                                            <li><a>NEW BALANCE</a></li>
+                                            <li><a>CONVERSE</a></li>
+                                            <li><a>EXPLORE</a></li>
+                                        </ul>
+                                    </div>
+                                    <i class="ri-arrow-right-s-line"></i>
+                                </li>
+                            </ul>
+                            <i class="ri-arrow-right-s-line"></i>
+                        </li>
+
+                        <li class="dashboard-options_list_accesorios">
+                            <span>ACCESORIOS</span>
+                        </li>
+
+                        <li class="dashboard-options_list_maquillaje">
+                            <span>MAQUILLAJE</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--
+                <div class="logIn_regis">
+                    <i class="ri-user-line"></i>
+                    <a href="Register.html">Registro</a>
+                    <span>/</span>
+                    <a href="LogIn.html">Iniciar Sesión</a>
+                </div>
+                -->
+            </div>
+        </header>
+
+        <div class="transparent-bg"></div>
+
+        <!-25:30->
+        <!-26:35->
+        <div class="sections" data-barba="container" data-barba-namespace="product">
+            <section class="product-detail-page">
+                <div class="product-carousel">
+                    <div class="product-detail-data-container">
+                        <ul class="product-name-brand-container">
+                            <li class="product-brand">NIKE</li>
+                            <li class="product-name">BLAZER VINTAGE WHITE</li>
+                        </ul>
+                    </div>
+                    <div class="blur-section left-blur-section"></div>
+                    <div class="carousel-product-images">
+                        <img src="img/Sneaker/Adidas/ForumLowBW/AdidasForumLowBW.webp" alt="img" draggable="false">
+                        <img src="img/Top/Shein/TrendyLetterPrintStandCollarJacket/TrendyLetterPrintStandCollarJacket.jpg" alt="img" draggable="false">
+                        <img src="img/Sneaker/Nike/NikeBlazerVintageWhite/NikeBlazerVintageWhite.webp" alt="img" draggable="false">
+                        <img src="img/SweetMintEyeShadowPalette.jpg" alt="img" draggable="false">
+                        <img src="img/Sneaker/NewBalance/NewBalance550White.webp" alt="img" draggable="false">
+
+                        <img src="img/Sneaker/Adidas/ForumLowBW/AdidasForumLowBW.webp" alt="img" draggable="false">
+                        <img src="img/Top/Shein/TrendyLetterPrintStandCollarJacket/TrendyLetterPrintStandCollarJacket.jpg" alt="img" draggable="false">
+                        <img src="img/Sneaker/Nike/NikeBlazerVintageWhite/NikeBlazerVintageWhite.webp" alt="img" draggable="false">
+                        <img src="img/SweetMintEyeShadowPalette.jpg" alt="img" draggable="false">
+                        <img src="img/Sneaker/NewBalance/NewBalance550White.webp" alt="img" draggable="false">
+                    </div>
+                    <div class="arrows-container">
+                        <i id="left" class="ri-arrow-left-s-line"></i>
+                        <i id="right" class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="blur-section right-blur-section"></div>
+                </div>
+            </section>
+        </div>
+
+        <footer id="lastSection-menu">
+            <div class="lastSection-menu">
+                <div class="lastSection">
+
+                    <div class="logoF">
+                        <img src="img/GSLogoW.jpg">
+                    </div>
+
+                    <div class="support">
+                        <ul>
+                            <li>SUPPORT</li>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="company">
+                        <ul>
+                            <li>COMPANY</li>
+                            <li><a href="#">Acerca de nosotros</a></li>
+                            <li><a href="#">Políticas de Privacidad</a></li>
+                            <li><a href="#">Términos de Uso</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="subscription">
+                        <ul>
+                            <li class="sub">SUBSCRIBE NOW</li>
+                            <li><input class="ingresar_correo" type="text" placeholder="Ingresa tu correo"></li>
+                            <li class="btn-sub"><a href="#">Suscribirse</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mobile_footer">
+                    <div class="mobile_footer_logo">
+                        <img src="img/GSLogoW.jpg">
+                    </div>
+
+                    <div class="mobile_footer_sections">
+                        <ul class="mobile_footer_sections_list">
+                            <li class="mobile_footer_support">
+                                <div class="mobile_support_title mobile_footer_title">
+                                    <span class="mobile_footer_support_title">SUPPORT</span>
+                                    <i class="mobile_footer_title_arrow ri-arrow-down-s-line"></i>
+                                </div>
+                                <div class="mobile_footer_container mobile_footer_support_options">
+                                    <ul>
+                                        <li><a href="#">FAQ's</a></li>
+                                        <li><a href="#">Preguntas Frecuentes</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mobile_footer_company">
+                                <div class="mobile_company_title mobile_footer_title">
+                                    <span class="mobile_footer_company_title">COMPANY</span>
+                                    <i class="mobile_company_title_arrow ri-arrow-down-s-line"></i>
+                                </div>
+                                <div class="mobile_footer_container mobile_footer_company_options">
+                                    <ul>
+                                        <li><a href="#">Acerca de nosotros</a></li>
+                                        <li><a href="#">Políticas de Privacidad</a></li>
+                                        <li><a href="#">Términos de Uso</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mobile_footer_subscription">
+                                <div class="mobile_subscription_title mobile_footer_title">
+                                    <span class="mobile_footer_subscription_title">SUBSCRIBE NOW</span>
+                                    <i class="mobile_subscription_title_arrow ri-arrow-down-s-line"></i>
+                                </div>
+                                <div class="mobile_footer_container mobile_footer_subscription_options">
+                                    <ul>
+                                        <li><input class="ingresar_correo" type="text" placeholder="Ingresa tu correo"></li>
+                                        <li class="btn-sub"><a href="#">Suscribirse</a></li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="rights-text">© 2023 GhostStore. Todos los derechos reservados.</p>
+                    <div class="language-media">
+                        <div class="language">
+                            <a href="#">
+                                <i class="ri-global-fill"></i>
+                                <span>Español</span>
+                            </a>
+                        </div>
+                        <div class="social-media">
+                            <a href="#"><i class="ri-whatsapp-fill"></i></a>
+                            <a href="#"><i class="ri-instagram-fill"></i></a>
+                            <a href="#"><i class="ri-tiktok-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script type="module" src="javaScript/javaS.js"></script>
+        <script src="javaScript/carousel-script-product.js"></script>
+        <script type="module" src="javaScript/cart.js"></script>
+
+        <!-------------------- BARBA LIBRERY LINK -------------------->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://unpkg.com/@barba/core"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    </body>
+</html>
