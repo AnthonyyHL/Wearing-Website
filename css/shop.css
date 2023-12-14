@@ -305,3 +305,7 @@
 .product:hover span {
     color: black;
 }
+
+@media (max-width: 464px) {
+    .shop-header span { font-size: 83px; }
+}
